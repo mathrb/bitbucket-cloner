@@ -26,7 +26,6 @@ if response.status_code != 200:
     exit()
 
 response = response.json()
-repositories = response
 
 def clone_repositories(repositories):
     for rep in repositories:
